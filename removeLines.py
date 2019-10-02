@@ -10,7 +10,7 @@ if __name__ == '__main__':
         print(copyedText)
         if copyBuff!=copyedText:
             copyBuff=copyedText
-            normalizedText = re.sub(r"(\n)|(\s){2,}","",copyBuff)
+            normalizedText = re.sub(r"(\n)|(\s){2,}"," ",copyBuff)
             print(normalizedText)
             pyperclip.copy(normalizedText)
         else:
